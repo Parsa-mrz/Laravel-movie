@@ -9,6 +9,14 @@ use Illuminate\Database\Eloquent\Model;
 class Video extends Model
 {
     use HasFactory;
+    protected $fillable=[
+        'name',
+        'url',
+        'thumbnail',
+        'slug',
+        'length',
+        'description',
+    ]; 
 
     public function getLengthAttribute($value)
     {

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [IndexController::class,'index'])->name('index');
-Route::get('/upload',function(){
-    return view('videos.create');
-});
+
+Route::get('/videos/create',[VideoController::class,'create'])->name('video.create');
+Route::post('/videos',[VideoController::class,'store'])->name('video.store');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
