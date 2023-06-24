@@ -87,7 +87,11 @@
             </div><!-- // row -->
         </div><!-- // container-full -->
     </div><!-- // main-category -->
-
+    @if (session('alert'))
+    <div class="alert alert-success">
+        {{ session('alert') }}
+    </div>
+    @endif
     <div class="site-output">
         <div id="all-output" class="col-md-12">
             {{ $content ?? '' }}
