@@ -20,6 +20,7 @@ Route::get('/', [IndexController::class,'index'])->name('index');
 
 Route::get('/videos/create',[VideoController::class,'create'])->name('videos.create');
 Route::post('/videos',[VideoController::class,'store'])->name('videos.store');
+Route::get('/videos/{id}',[VideoController::class,'show'])->name('videos.show'); 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
