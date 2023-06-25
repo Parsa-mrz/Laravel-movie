@@ -18,6 +18,11 @@ class Video extends Model
         'description',
     ]; 
 
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
     public function getLengthAttribute($value)
     {
          return gmdate('H:s',$value);
