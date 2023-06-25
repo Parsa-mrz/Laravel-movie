@@ -4,6 +4,7 @@
             <div class="row">
                 <!-- upload -->
                 <div class="col-md-8">
+                    <x-validation-error></x-validation-error>
                     <h1 class="page-title"><span>آپلود</span> ویدیو</h1>
                     <form action="{{route('videos.store')}}" method="POST">
                         @csrf
