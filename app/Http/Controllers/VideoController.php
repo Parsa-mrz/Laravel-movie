@@ -32,6 +32,6 @@ class VideoController extends Controller
 
         Video::create($request->all());
 
-        return redirect()->route('index')->with('alert', 'Successfully created.');
+        return redirect()->route('index')->with('alert', __('messages.success'));
     }
 }
