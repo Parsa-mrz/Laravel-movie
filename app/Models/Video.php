@@ -16,6 +16,7 @@ class Video extends Model
         'slug',
         'length',
         'description',
+        'category_id'
     ]; 
 
     public function getRouteKeyName()
@@ -35,5 +36,9 @@ class Video extends Model
     public function relatedVideos(int $count = 6)
     {
         return Video::all()->random($count);
+    }
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
     }
 }

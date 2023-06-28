@@ -7,4 +7,5 @@ return [
     'thumbnail'=> 'تصویر ویدیو',
     'description' => 'توضیحات',
     'save' => 'ذخیره',
+    'category' => 'دسته بندی ویدیو'
 ];

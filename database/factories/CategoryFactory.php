@@ -2,29 +2,25 @@
 
 namespace Database\Factories;
 
-use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
  */
-class VideoFactory extends Factory
+class CategoryFactory extends Factory
 {
     /**
      * Define the model's default state.
-    protected $model = Video::class;
+    protected $model = Category::class;
      * @return array<string, mixed>
      */
     public function definition(): array
     {
         return [
             'name' => $this->faker->name(),
-            'url' => 'https://www.aparat.com/v/0mtHE',
-            'length' => $this->faker->randomNumber(3),
             'slug' => $this->faker->slug(),
             'description' => $this->faker->realText(),
-            'thumbnail' => 'https://loremflickr.com/446/240/world?random=' . rand(1,99),
-            'category_id' => Category::first() ?? Category::factory()
+            'icon' => $this->faker->word()
         ];
     }
 }
