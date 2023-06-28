@@ -23,7 +23,7 @@ class Video extends Model
         return 'slug';
     }
 
-    public function getLengthAttribute($value)
+    public function getLengthInHumanAttribute($value)
     {
          return gmdate('H:s',$value);
     }
