@@ -43,7 +43,7 @@
 
                     <div class="or"></div>
 
-                    <p>شما یک حساب کاربری دارید؟ <a href="{{route('login')}}"> ورود!</a> </p>
+                    <p>شما یک حساب کاربری دارید؟ <a href="{{route('login.create')}}"> ورود!</a> </p>
                 </form>
             </div>
         </div>

@@ -70,8 +70,8 @@
                 @endauth
                 @guest
                 <div class="col-lg-2 col-md-2 col-sm-4 hidden-xs hidden-sm">
-                    <a class='btn btn-danger' href="{{Route('login')}}">ورود</a>
-                    <a class='btn btn-danger' href="{{Route('register')}}">ثبت نام</a>
+                    <a class='btn btn-danger' href="{{Route('login.create')}}">ورود</a>
+                    <a class='btn btn-danger' href="{{Route('register.create')}}">ثبت نام</a>
                 </div>
                 @endguest
             </div><!-- // row -->
