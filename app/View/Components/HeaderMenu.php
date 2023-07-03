@@ -2,18 +2,20 @@
 
 namespace App\View\Components;
 
+use App\Models\Category;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class layout extends Component
+class HeaderMenu extends Component
 {
+    public $categories;
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        //
+        $this->categories = Category::all();
     }
 
     /**
@@ -21,6 +23,6 @@ class layout extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.layout');
+        return view('components.header-menu');
     }
 }

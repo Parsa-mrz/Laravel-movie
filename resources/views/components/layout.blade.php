@@ -36,7 +36,7 @@
                         <i class="fa fa-close"></i>
                     </a>
                     <div id="logo">
-                        <a href="01-home.html"><img src="img/logo.png" alt=""></a>
+                        <a href="{{route('index')}}"><img src="img/logo.png" alt=""></a>
                     </div>
                 </div><!-- // col-md-2 -->
                 <div class="col-lg-3 col-md-3 col-sm-6 hidden-xs hidden-sm">
@@ -50,7 +50,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-5 hidden-xs hidden-sm">
                 </div><!-- // col-md-4 -->
                 <div class="col-lg-2 col-md-2 col-sm-4 hidden-xs hidden-sm">
-                    <!--  -->
+                    <a class='add_video' href="{{Route('videos.create')}}">افزودن ویدیو جدید</a>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs hidden-sm">
                     <div class="dropdown">
@@ -77,12 +77,7 @@
         <div class="container-full">
             <div class="row">
                 <div class="col-md-12">
-                    <ul class="main-category-menu">
-                        <li class="color-1"><a href="02-category.html"><i class="fa fa-music"></i>موسیقی</a></li>
-                        <li class="color-2"><a href="02-category.html"><i class="fa fa-soccer-ball-o"></i>ورزشی</a></li>
-                        <li class="color-3"><a href="02-category.html"><i class="fa fa-gamepad"></i>بازی</a></li>
-
-                    </ul>
+                    <x-header-menu></x-header-menu>
                 </div><!-- // col-md-14 -->
             </div><!-- // row -->
         </div><!-- // container-full -->

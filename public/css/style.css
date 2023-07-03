@@ -1360,7 +1360,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	top: 0px;
 	z-index: -1;
 	background-attachment: fixed;
-	background-image: url(../demo_img/sing-up-ba.jpg);
+	background-image: url(../img/sign-up-ba.jpg);
 	opacity: 0.2;
 	}	
 .log_in_page{
@@ -2489,4 +2489,10 @@ font-style: italic;
 	text-transform: uppercase;
 	padding-top: 8px;
 	padding-bottom: 8px;
+}
+a.add_video {
+    color: #dfdfdf;
+    background: #525252;
+    padding: 6px 27px;
+    border-radius: 6px;
 }

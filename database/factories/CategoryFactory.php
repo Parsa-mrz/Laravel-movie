@@ -20,7 +20,6 @@ class CategoryFactory extends Factory
             'name' => $this->faker->name(),
             'slug' => $this->faker->slug(),
             'description' => $this->faker->realText(),
-            'icon' => $this->faker->word()
         ];
     }
 }
